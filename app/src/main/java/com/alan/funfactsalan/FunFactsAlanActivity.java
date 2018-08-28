@@ -37,8 +37,9 @@ public class FunFactsAlanActivity extends AppCompatActivity {
                 // The button was clicked, so update the factTextView with new facts
                 // Update the screen with our new fact
                 Random randomGenerator = new Random();
-                int randomNumber = randomGenerator.nextInt(3);
+                int randomNumber = randomGenerator.nextInt(facts.length);
                 String fact = randomNumber + "";
+                fact = facts[randomNumber];
                 factTextView.setText(fact);
             }
 
