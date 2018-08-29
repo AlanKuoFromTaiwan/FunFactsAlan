@@ -37,6 +37,7 @@ public class FunFactsAlanActivity extends AppCompatActivity {
                 factTextView.setText(fact);
                 String color = colors.getColor();
                 relativeLayout.setBackgroundColor(Color.parseColor(color));
+                showFactButton.setTextColor(Color.parseColor(color));
             }
 
         };
